@@ -1,0 +1,149 @@
+*{
+    font-size: 13px;
+    font-family: "Open Sans";
+    margin:0;
+    padding: 0;
+}
+.Container{
+    width: 1170px;
+    margin-top: 10px;
+}
+.textnav{
+    border-right: solid 1px gray;
+    Color: #3d3d3d;
+    Font-size: 13px;
+    margin: auto;
+    padding-right: 10px;
+}
+.logo{
+    width: 170px;
+}
+.wrapper-logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-bhs{
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #b8860b;
+    border-radius: 5px;
+}
+.icon-social{
+    color: #b8860b;
+    font-size: 22px;
+    margin-right: 5px;
+}
+.personal-storange{
+    border: 1px solid #b8860b ;
+    Font-size: 22px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.text-gray{
+    color: gray;
+   font-size: 12px;
+}
+.wrapper-content{
+    border: 1px solid #b8860b;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.img11{
+    width: 100%;
+}
+
+.slide1{
+    position: relative;
+    
+}
+.slide11{
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    width: 100%;
+}
+.slide22{
+    background-color: white;
+    width: 500px;
+    margin-left: 300px;
+    opacity: 0.5;
+}
+.cake{
+    background-color: tomato;
+}
+.click{
+    background-color: #b8860b;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.kanan{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+    
+}
+.card{
+    border: 1px solid #b8860b !important;
+    box-sizing: content-box !important;
+}
+.card-text{
+    color: gray;
+}
+
+.tengah{
+    margin-left: 5px;
+    
+}
+.right{
+    margin-right: 5px;
+}
+.footer{
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.text-btn{
+    color: #fff;
+    font-size: 17px;
+}
+.click:hover{
+    background-color: #3d3d3d;
+}
+.text-footer{
+    color: #b8860b;
+    font-size: 22px;
+}
+.twotwo{
+    font-size: 22px;
+    color: #333;
+}
+.copyright{
+    border-right: 1px solid #3d3d3d;
+}
+.menumenu{
+    color: #3d3d3d;
+}
+.light{
+    font-size: 50px;
+}
+.light1{
+    font-size: 30px;
+    font-family: "Caveat",cursive;
+}
+.last{
+    color: #333;
+}
+
+
