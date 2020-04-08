@@ -11,27 +11,27 @@ class Home extends Component{
         return(
             <div>
                 <div className="Container container">
-                    
-                    <nav className="navbar navbar-expand-lg navbar-light navnav">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarNav">
-                        <div className="textnav"><p>Home</p></div>
-                       
-                       <div className="textnav"><p>Personal Storage</p></div>
-                       <div className="textnav"><p>Business Storage</p></div>
-                       <div className="textnav"><p>Why Us?</p></div>
-                       <div className="textnav"><p>Self-Storage Blog</p></div>
-                       <div className="textnav"><p>Own A Self-Storage Facility</p></div>
-                       <div className="textnav"><p>Contact Us</p></div>
-                       <div ><p>Reserve Online</p></div>
-                        </div>
-                       
-                    </nav>
+                    <div className="sidebar col-sm-12">
+                        <nav className="navbar navbar-expand-lg navbar-light navnav">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="collapse navbar-collapse" id="navbarNav">
+                                <div className="textnav"><p>Home</p></div>
+                                <div className="textnav"><p>Personal Storage</p></div>
+                                <div className="textnav"><p>Business Storage</p></div>
+                                <div className="textnav"><p>Why Us?</p></div>
+                                <div className="textnav"><p>Self-Storage Blog</p></div>
+                                <div className="textnav"><p>Own A Self-Storage Facility</p></div>
+                                <div className="textnav"><p>Contact Us</p></div>
+                                <div ><p>Reserve Online</p></div>
+                            </div>
+                        </nav>
+                    </div>
+                   
                     <div className="wrapper-logo">
-                        <div className="">
-                            <img src={logo}  className="logo"/>
+                        <div className="logologo">
+                                <img src={logo}  className="logo"/>
                         </div>
                         
                         <div className="d-flex">
