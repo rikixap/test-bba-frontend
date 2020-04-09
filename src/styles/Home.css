@@ -6,7 +6,12 @@
 }
 .Container{
     width: 1170px;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.sidebar{
+    margin-bottom: 20px;
+    /* position: fixed; */
 }
 .textnav{
     border-right: solid 1px gray;
@@ -131,6 +136,8 @@
 }
 .copyright{
     border-right: 1px solid #3d3d3d;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .menumenu{
     color: #3d3d3d;
@@ -142,14 +149,102 @@
     font-size: 30px;
     font-family: "Caveat",cursive;
 }
-.last{
-    color: #333;
-}
 
 
-/* @media only screen and (max-width:600px){
+@media only screen and (max-width:600px){
     .sidebar{
         background-color: #b8860b; 
+    
     }
-  
+    .wrapper-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .logologo{
+        display: flex;
+        justify-content: center;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .personalstorage{
+        display: flex;
+        flex-direction: column;
+    }
+    .personal-storange{
+        width: 100%;
+        border-top-left-radius:  0px;
+        border-top-right-radius: 0px;
+        margin-bottom: 10px;
+    }
+    .cardcard{
+        display: flex;
+        flex-direction: column;
+    }
+    .menumenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper-content{
+        border: none;
+        width: 100%;
+        box-sizing: content-box;
+    }
+    .tengah{
+        margin-left: 0px;
+        
+    }
+    .right{
+        margin-right: 0px;
+    }
+    .card{
+        margin-bottom: 10px;
+    }
+    .unitedstates{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .slide11{
+        position: absolute;
+        top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .light{
+        font-size: 35px;
+    }
+    .slide22{
+        background-color: white;
+        width: 300px;
+        margin-left: 50px;
+        opacity: 0.5;
+    }
+    .textnav{
+        border-right: none;
+        margin-top: 20px;
+        color: #333;
+    }  
+                 
+}
+@media only screen and (max-width:768px){
+    .sidebar{
+        background-color: #b8860b; 
+    
+    }
+
+}
+
+/* @media only screen and (min-width:768px) and (max-width: 1024px){
+    .sidebar{
+        background-color: #b8860b; 
+    
+    }
+    .cardcard{
+        display: flex;
+
+    }
+
 } */

@@ -2,6 +2,8 @@ import React,{Component} from 'react';
 import '../styles/Home.css';
 import logo  from '../img/logo123123.JPG';
 import cake1 from '../img/cake1.jpg';
+import cake2 from '../img/cake2.jpg';
+import cake3 from '../img/cake3.jpg';
 import gedung from '../img/gedung.jpeg';
 import store from '../img/store.jpg';
 
@@ -11,12 +13,12 @@ class Home extends Component{
         return(
             <div>
                 <div className="Container container">
-                    <div className="sidebar col-sm-12">
+                    <div className="sidebar">
                         <nav className="navbar navbar-expand-lg navbar-light navnav">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div className="collapse navbar-collapse" id="navbarNav">
+                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div className="textnav"><p>Home</p></div>
                                 <div className="textnav"><p>Personal Storage</p></div>
                                 <div className="textnav"><p>Business Storage</p></div>
@@ -34,7 +36,7 @@ class Home extends Component{
                                 <img src={logo}  className="logo"/>
                         </div>
                         
-                        <div className="d-flex">
+                        <div className="d-flex unitedstates">
                             <select className="input-bhs"  id="cars" name="cars">
                                 <option value="volvo">United States</option>
                                 <option value="saab">Saab</option>
@@ -50,16 +52,16 @@ class Home extends Component{
                             </select>
     
                             <div className="icon-social"><i className="fab fa-facebook-f fa-1x"></i></div>
-                            <div  className="icon-social"><i class="fab fa-twitter fa-1x"></i></div>
-                            <div  className="icon-social"><i class="fab fa-google-plus-g fa-1x "></i> </div>
+                            <div  className="icon-social"><i className="fab fa-twitter fa-1x"></i></div>
+                            <div  className="icon-social"><i className="fab fa-google-plus-g fa-1x "></i> </div>
                             
                         </div>
                        
                     </div>
-                    <div className="text-right">
-                        <p>Make Our Space Your Space <i class="fab fa-whatsapp"></i> +852 8202 0811</p>    
+                    <div className="text-right contact">
+                        <p>Make Our Space Your Space <i className="fab fa-whatsapp"></i> +852 8202 0811</p>    
                     </div>             
-                    <div className="d-flex ">
+                    <div className="d-flex personalstorage">
                         <div className="personal-storange">
                             <p className="twotwo">Personal Storage</p>
                             <p className="text-gray">Found out more about storing personal items and how to reserve a storage room online.</p>
@@ -71,69 +73,86 @@ class Home extends Component{
                     </div>
 
                     <div className="wrapper-content">
-                    <div id="carouselExampleSlidesOnly" light class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
+                    <div id="carouselExampleSlidesOnly"  className="carousel slide" data-ride="carousel">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
                                 <div className="slide1">
                                          <img src={cake1} className="img11"/>
                                     <div className="slide11">
                                         <p className="text-light light">DELICIOUS</p>
                                         <div className="slide22">
-                                        <p className="light1">cake is our signature product</p>
-                                    </div>
+                                            <p className="light1">cake is our signature product</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Second slide"/>
+                            <div className="carousel-item">
+                                <div className="slide1">
+                                         <img src={cake2} className="img11"/>
+                                    <div className="slide11">
+                                        <p className="text-light light">DELICIOUS</p>
+                                        <div className="slide22">
+                                            <p className="light1">cake is our signature product</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide"/>
+                            <div className="carousel-item">
+                                <div className="slide1">
+                                         <img src={cake3} className="img11"/>
+                                    <div className="slide11">
+                                        <p className="text-light light">DELICIOUS</p>
+                                        <div className="slide22">
+                                            <p className="light1">cake is our signature product</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         </div>
                         <div className="text-right kanan">
-                            <button className="click"><p className="text-btn">Storange Calculator <i class="fas fa-chevron-right"></i></p></button>
+                            <button className="click"><p className="text-btn">Storange Calculator <i className="fas fa-chevron-right"></i></p></button>
                         </div>
                         <div className="text-right kanan">
-                            <button className="click"><p className="text-btn">Reserve Your Space <i class="fas fa-chevron-right"></i></p></button>
+                            <button className="click"><p className="text-btn">Reserve Your Space <i className="fas fa-chevron-right"></i></p></button>
                         </div>
 
                     
-                        <div className="d-flex ">
-                        <div class="card">
-                            <img src={gedung} class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <p class="twotwo">Your Promotions</p>
-                                <p class="card-text">Find out how much you can save on your lease.</p>
+                        <div className="d-flex cardcard">
+                        <div className="card">
+                            <img src={gedung} className="card-img-top" alt="..."/>
+        
+                            <div className="card-body">
+                                <p className="twotwo">Your Promotions</p>
+                                <p className="card-text">Find out how much you can save on your lease.</p>
                             </div>
                         </div>
-                        <div class="card tengah">
-                            <img src={gedung} class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <p class="twotwo">Your Packing</p>
-                                <p class="card-text">Buy your boxes and packaging materials here.</p>
+                        <div className="card tengah">
+                            <img src={gedung} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <p className="twotwo">Your Packing</p>
+                                <p className="card-text">Buy your boxes and packaging materials here.</p>
                             </div>
                         </div>
-                        <div class="card right">
-                            <img src={gedung} class="card-img-top" alt="..."/>
-                            <div class="card-body">
+                        <div className="card right">
+                            <img src={gedung} className="card-img-top" alt="..."/>
+                            <div className="card-body">
                                 <p className="twotwo">Your Bill Payment </p>
-                                <p class="card-text">pay the bill for you current storage rental online.</p>
+                                <p className="card-text">pay the bill for you current storage rental online.</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src={store} class="card-img-top" alt="..."/>
-                            <div class="card-body">
+                        <div className="card">
+                            <img src={store} className="card-img-top" alt="..."/>
+                            <div className="card-body">
                                 <p className="twotwo">Your Nearest Store</p>
-                                <p class="card-text">Find where our store are located in your country.</p>
+                                <p className="card-text">Find where our store are located in your country.</p>
                             </div>
                         </div>
                         </div>
                      
                     </div>
 
-                    <div className="d-flex">
+                    <div className="d-flex menumenu">
                         <div className="footer">
                             <p className="text-footer">Your Space</p>
                             <p>What is self-storage?</p>
@@ -166,15 +185,15 @@ class Home extends Component{
                             <p>Acces hours</p>
                             <p>Office opening hours</p>
                         </div>
-                        <div className="footer last">
-                            <p>Self-storage Blog</p>
-                            <p>Own A Self-storage Facility</p>
-                            <p>About Us</p>
-                            <p>Contact Us</p>
-                            <p>Reserve Online</p>
+                        <div className="footer">
+                            <p className="twotwo">Self-storage Blog</p>
+                            <p className="twotwo">Own A Self-storage Facility</p>
+                            <p className="twotwo">About Us</p>
+                            <p className="twotwo">Contact Us</p>
+                            <p className="twotwo">Reserve Online</p>
                         </div>
                     </div>
-                    <div className="d-flex">
+                    <div className="d-flex ">
                             <div className="copyright">
                                 <p>Terms and Conditions</p>
                             </div>
