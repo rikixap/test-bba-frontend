@@ -9,31 +9,55 @@ import store from '../img/store.jpg';
 
 
 class Home extends Component{
+    constructor(){
+        super()
+    }
+    componentDidMount(){
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("myHeader");
+        var logonav = document.getElementById("logonav");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            logonav.classList.remove("logonav");
+          } else {
+            header.classList.remove("sticky");
+            logonav.classList.add("logonav")
+          }
+        }
+        
+    }
     render(){
         return(
             <div>
                 <div className="Container container">
-                    <div className="sidebar">
-                        <nav className="navbar navbar-expand-lg navbar-light navnav">
+                    <div className="sidebar"  id="myHeader">
+                        <nav className="navbar navbar-expand-lg navbar-light">
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div className="textnav"><p>Home</p></div>
-                                <div className="textnav"><p>Personal Storage</p></div>
-                                <div className="textnav"><p>Business Storage</p></div>
-                                <div className="textnav"><p>Why Us?</p></div>
-                                <div className="textnav"><p>Self-Storage Blog</p></div>
-                                <div className="textnav"><p>Own A Self-Storage Facility</p></div>
-                                <div className="textnav"><p>Contact Us</p></div>
-                                <div ><p>Reserve Online</p></div>
+                            <div className="collapse navbar-collapse" id="navbarSupportedContent"> 
+                                <img src={logo}  className="logonav" id="logonav" alt="logo"/>
+                                <div className="menumenumenu">
+                                    <div className="textnav"><p>Home</p></div>
+                                    <div className="textnav"><p>Personal Storage</p></div>
+                                    <div className="textnav"><p>Business Storage</p></div>
+                                    <div className="textnav"><p>Why Us?</p></div>
+                                    <div className="textnav"><p>Self-Storage Blog</p></div>
+                                    <div className="textnav"><p>Own A Self-Storage Facility</p></div>
+                                    <div className="textnav"><p>Contact Us</p></div>
+                                    <div><p>Reserve Online </p></div>
+                                </div>
                             </div>
                         </nav>
                     </div>
                    
                     <div className="wrapper-logo">
                         <div className="logologo">
-                                <img src={logo}  className="logo"/>
+                                <img src={logo}  className="logo" alt="logo"/>
                         </div>
                         
                         <div className="d-flex unitedstates">
@@ -77,33 +101,39 @@ class Home extends Component{
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <div className="slide1">
-                                         <img src={cake1} className="img11"/>
+                                         <img src={cake1} className="img11" alt="cake1"/>
                                     <div className="slide11">
                                         <p className="text-light light">DELICIOUS</p>
                                         <div className="slide22">
-                                            <p className="light1">cake is our signature product</p>
+                                            <div className="centerslide">
+                                                <p className="light1">cake is our signature product</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="carousel-item">
                                 <div className="slide1">
-                                         <img src={cake2} className="img11"/>
+                                         <img src={cake2} className="img11" alt="cake2"/>
                                     <div className="slide11">
                                         <p className="text-light light">DELICIOUS</p>
                                         <div className="slide22">
-                                            <p className="light1">cake is our signature product</p>
+                                        <div className="centerslide">
+                                                <p className="light1">cake is our signature product</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="carousel-item">
                                 <div className="slide1">
-                                         <img src={cake3} className="img11"/>
+                                         <img src={cake3} className="img11" alt="cake3"/>
                                     <div className="slide11">
                                         <p className="text-light light">DELICIOUS</p>
                                         <div className="slide22">
-                                            <p className="light1">cake is our signature product</p>
+                                        <div className="centerslide">
+                                                <p className="light1">cake is our signature product</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +148,8 @@ class Home extends Component{
                         </div>
 
                     
-                        <div className="d-flex cardcard">
+                        <div className="cardcard">
+                        <div className="kard">
                         <div className="card">
                             <img src={gedung} className="card-img-top" alt="..."/>
         
@@ -134,6 +165,8 @@ class Home extends Component{
                                 <p className="card-text">Buy your boxes and packaging materials here.</p>
                             </div>
                         </div>
+                        </div>
+                        <div className="kard">
                         <div className="card right">
                             <img src={gedung} className="card-img-top" alt="..."/>
                             <div className="card-body">
@@ -149,10 +182,12 @@ class Home extends Component{
                             </div>
                         </div>
                         </div>
+                        </div>
                      
                     </div>
 
-                    <div className="d-flex menumenu">
+                    <div className="menu">
+                        <div className="riki">
                         <div className="footer">
                             <p className="text-footer">Your Space</p>
                             <p>What is self-storage?</p>
@@ -168,6 +203,8 @@ class Home extends Component{
                             <p>I need extra space at home</p>
                             <p>I need temporary storage</p>
                         </div>
+                        </div>
+                        <div className="raka">
                         <div className="footer">
                             <p className="text-footer">Business Storage</p>
                             <p>Storage for archiving</p>
@@ -191,6 +228,7 @@ class Home extends Component{
                             <p className="twotwo">About Us</p>
                             <p className="twotwo">Contact Us</p>
                             <p className="twotwo">Reserve Online</p>
+                        </div>
                         </div>
                     </div>
                     <div className="d-flex ">

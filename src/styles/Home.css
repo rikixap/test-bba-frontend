@@ -12,13 +12,22 @@
 .sidebar{
     margin-bottom: 20px;
     /* position: fixed; */
+    /* width: 95%; */
+    
 }
+
 .textnav{
     border-right: solid 1px gray;
-    Color: #3d3d3d;
-    Font-size: 13px;
-    margin: auto;
     padding-right: 10px;
+    padding-left: 10px;
+    
+}
+.menumenumenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    Font-size: 13px;
 }
 .logo{
     width: 170px;
@@ -73,12 +82,16 @@
     top: 200px;
     text-align: center;
     width: 100%;
+    
 }
 .slide22{
-    background-color: white;
-    width: 500px;
-    margin-left: 300px;
-    opacity: 0.5;
+    /* background-color: white; */
+    width: 100%;
+    /* margin-left: 300px; */
+    display: flex;
+    justify-content: center;
+    /* opacity: 0.5; */
+    
 }
 .cake{
     background-color: tomato;
@@ -97,8 +110,6 @@
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
-    
-    
 }
 .card{
     border: 1px solid #b8860b !important;
@@ -149,12 +160,49 @@
     font-size: 30px;
     font-family: "Caveat",cursive;
 }
+.logonav{
+    visibility: hidden;
+}
 
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #b8860b;
+    z-index: 1;
+    width: 1111px;
+    color: #fff;
+}
+.riki{
+    display: flex;
 
+}
+.raka{
+    display: flex;
+   
+}
+.kard{
+    flex-direction: row;
+    display: flex;
+}
+.cardcard{
+    display: flex;
+    flex-direction: row;
+}
+.centerslide{
+    background-color: whitesmoke;
+    width: 500px;
+    opacity: 0.5;
+}
+.menufoot{
+    display: flex;
+    flex-direction: row;
+}   
 @media only screen and (max-width:600px){
     .sidebar{
-        background-color: #b8860b; 
-    
+        background-color: #b8860b;
+    }
+    .sticky {
+      width: 93%;
     }
     .wrapper-logo{
         display: flex;
@@ -216,35 +264,58 @@
     .light{
         font-size: 35px;
     }
-    .slide22{
-        background-color: white;
-        width: 300px;
-        margin-left: 50px;
-        opacity: 0.5;
-    }
-    .textnav{
-        border-right: none;
+  
+    /* .textnav{
         margin-top: 20px;
-        color: #333;
-    }  
-                 
+        color: rgb(196, 183, 183);
+    } */
+  .kard{
+      flex-direction: column;
+  }
+.centerslide{
+    width: auto;
 }
-@media only screen and (max-width:768px){
-    .sidebar{
-        background-color: #b8860b; 
-    
-    }
-
+.menufoot{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    width: 100%;
+}
+.menumenumenu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    Font-size: 13px;
+}
 }
 
-/* @media only screen and (min-width:768px) and (max-width: 1024px){
-    .sidebar{
-        background-color: #b8860b; 
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
     
-    }
+   
     .cardcard{
-        display: flex;
-
+    display: flex;
+    flex-direction: column;
     }
+    .sticky{
+        width: 91%;
+    }
+    .riki{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .raka{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
 
-} */
+}
+
+
